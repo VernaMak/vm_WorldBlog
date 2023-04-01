@@ -11,8 +11,7 @@ export default function Posts() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [postId, setPostId] = useState(null);
-  const [isEditing, setIsEditing] = useState(false);
-  const [updatedContent, setUpdatedContent] = useState("");
+
 
   const { data: session } = useSession();
 
