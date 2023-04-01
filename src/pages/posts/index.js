@@ -89,7 +89,9 @@ export default function Posts() {
           </div>
           
         ) : (
+          <div className={styles.main}>
           <p  className={styles.alert_message}>Please sign in to see the post </p>
+          </div>
         )}
         <div className={styles.post_cnt}>
           {posts.map((post) => (
@@ -100,11 +102,6 @@ export default function Posts() {
                 </div>
                 <div className={styles.p_cnt}>
                   <p className={styles.p}>{post.content}</p>
-                
-            
-            
-
-
     
                 </div>
                 
