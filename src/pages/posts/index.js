@@ -56,11 +56,6 @@ export default function Posts() {
     setPosts(res.data);
   };
 
-  const editPost = (post) => {
-    setIsEditing(true);
-    setUpdatedContent(post.content);
-    setPostId(post.id);
-  };
 
   return (
     <>
